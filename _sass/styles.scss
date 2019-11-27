@@ -1,2 +1,23 @@
 // Import Core Clean Blog SCSS
 @import "../assets/vendor/startbootstrap-clean-blog/scss/clean-blog.scss";
+
+// Custom CSS
+.categories {
+    padding-top: 10px;
+    font-size: 36px;
+    line-height: 150%;
+  }
+  
+.smoother {
+    // Fixing the not-so-smooth animation
+    padding-top: 1px;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+body {
+    animation: fadein 2.5s; 
+}
