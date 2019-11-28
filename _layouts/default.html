@@ -14,7 +14,9 @@
 
   {% include scripts.html %}
 
+  {% if site.google_analytics != "UA-XXXXXXXXX-X" %}
   {% include google-analytics.html %}
+  {% endif %}
 
 </body>
 

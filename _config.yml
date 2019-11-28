@@ -12,6 +12,7 @@ facebook_username:  StartBootstrap
 linkedin_username:
 
 # Add your google-analytics ID here to activate google analytics
+# Leave it UA-XXXXXXXXX-X when you don't need this function.
 google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
 
 # Build settings
