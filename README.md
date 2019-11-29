@@ -6,7 +6,7 @@ This repository holds a *modified* version of the Jekyll version of the Clean Bl
 
 See the theme live [here](https://site.loyi.dev/startbootstrap-clean-blog-jekyll/).
 
-## Modifications
+## Modifications - This section tracks modifications that matter
 
 ### Features
 
