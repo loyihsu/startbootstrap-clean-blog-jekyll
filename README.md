@@ -11,6 +11,7 @@ See the theme live [here](https://site.loyi.dev/startbootstrap-clean-blog-jekyll
 ### Features
 
 - [x] Supporting categories
+- [x] Adding dark mode and supporting default mode and mode switches.
 
 ### Refinements
 

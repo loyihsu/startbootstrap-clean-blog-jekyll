@@ -4,6 +4,59 @@
 
 <script src="{{"/assets/scripts.js" | relative_url }}"></script>
 
+<script>
+  let darkSwitch = function() {
+    let mySwitch = document.getElementById("switch");
+
+    let darkClass = "dark";
+
+    var body = document.getElementsByTagName("body"); 
+    var anchors = document.getElementsByTagName("a");
+    var navbar = document.getElementById("mainNav");
+    var preview = document.getElementsByClassName("post-preview");
+
+    if (mySwitch.firstChild.className == "fas fa-moon") {
+      // Dark mode
+      mySwitch.firstChild.className = "fas fa-sun";
+
+      for (var i = 0; i < body.length; i++) {
+        body[i].classList.add(darkClass);
+      }
+
+      for (var i = 0; i < anchors.length; i++) {
+        anchors[i].classList.add(darkClass);
+      }
+
+      navbar.classList.add(darkClass);
+
+      for (var i = 0; i < preview.length; i++) {
+        preview[i].classList.add(darkClass);
+      }
+
+      sessionStorage.setItem("_mode", "dark");
+    } else {
+      // Light mode
+      mySwitch.firstChild.className = "fas fa-moon";
+
+      for (var i = 0; i < body.length; i++) {
+        body[i].classList.remove(darkClass);
+      }
+
+      for (var i = 0; i < anchors.length; i++) {
+        anchors[i].classList.remove(darkClass);
+      }
+
+      navbar.classList.remove(darkClass);
+
+      for (var i = 0; i < preview.length; i++) {
+        preview[i].classList.remove(darkClass);
+      }
+
+      sessionStorage.setItem("_mode", "light");
+    }
+  }
+</script>
+
 {% if page.url contains 'contact' %}
   <!-- Form Validation -->
   <script src="{{"/assets/vendor/startbootstrap-clean-blog/js/jqBootstrapValidation.js" | relative_url }}"></script>

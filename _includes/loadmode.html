@@ -1,0 +1,14 @@
+<script>
+loadMode = function () {
+    let session = sessionStorage.getItem("_mode");
+    let def = (session == undefined) ? "{{ site.modeDefault }}" : session;
+    let cur = (document.getElementById("switch").firstChild.className == "fas fa-moon") ? "light" : "dark";
+
+    console.log(def);
+    console.log(cur);
+
+    if (def != cur) { darkSwitch(); }
+}
+
+loadMode();
+</script>
